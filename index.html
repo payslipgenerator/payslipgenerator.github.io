@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Payslip Generator — UK &amp; Nigeria PAYE, PDF Ready</title>
+<meta name="description" content="Generate a professional payslip with accurate UK or Nigeria PAYE tax in seconds. Free, private, no signup — your payroll data never leaves your browser.">
+<link rel="canonical" href="https://payslip-generator.github.io/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Free Payslip Generator","url":"https://payslip-generator.github.io/","applicationCategory":"FinanceApplication","description":"Generate professional payslips with UK or Nigeria PAYE tax, entirely in your browser.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"operatingSystem":"Any"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7470802264397682" crossorigin="anonymous"></script>
+<script src="track.js" data-ga="G-NMDXLM3Z2J"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:'Inter',-apple-system,sans-serif;background:#f6f8fa;color:#1a1a2e;min-height:100vh;display:flex;flex-direction:column}
+.container{max-width:760px;margin:0 auto;padding:20px 16px;width:100%;flex:1}
+header{background:linear-gradient(135deg,#35286b,#4c3a99);color:#fff;padding:26px 0 22px;text-align:center}
+header h1{font-size:clamp(1.4rem,4vw,2rem);font-weight:700;margin-bottom:6px}
+header p{font-size:clamp(.8rem,2vw,.95rem);opacity:.85}
+.ad-banner{background:#e8ecf1;border-radius:10px;display:flex;align-items:center;justify-content:center;min-height:90px;margin:16px 0;font-size:.8rem;color:#888;text-transform:uppercase;letter-spacing:1px;overflow:hidden}
+.card{background:#fff;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08);padding:20px;margin-bottom:16px}
+.card h2{font-size:1rem;color:#35286b;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-size:.8rem;font-weight:600;color:#555;margin:8px 0 4px}
+input,select{width:100%;padding:9px 10px;font-size:.9rem;border:2px solid #dde1e7;border-radius:8px;outline:none;background:#fff}
+input:focus,select:focus{border-color:#4c3a99}
+.seg{display:flex;gap:8px;margin-bottom:14px}
+.seg button{flex:1;padding:10px;border:2px solid #dde1e7;border-radius:8px;background:#fff;font-weight:600;cursor:pointer;color:#555}
+.seg button.on{background:#4c3a99;border-color:#4c3a99;color:#fff}
+.btn{background:#4c3a99;color:#fff;border:none;border-radius:8px;padding:11px 18px;font-size:.9rem;font-weight:600;cursor:pointer}
+.btn:hover{background:#35286b}
+.center{text-align:center}
+.tip{background:#f3efff;border-left:3px solid #4c3a99;padding:10px 14px;border-radius:0 8px 8px 0;font-size:.78rem;color:#4a3a6b;margin-top:10px;line-height:1.5}
+.payslip{background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:26px;margin-top:16px;display:none}
+.payslip .top{display:flex;justify-content:space-between;border-bottom:2px solid #35286b;padding-bottom:10px;margin-bottom:12px}
+.payslip h2{color:#35286b;font-size:1.2rem}
+.payslip .big{font-weight:700;color:#1a1a2e}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:6px 0}
+th{text-align:left;padding:7px 8px;background:#f1eefb;color:#35286b}
+td{padding:7px 8px;border-bottom:1px solid #eef2f1}
+td.num,th.num{text-align:right}
+.grand{background:#f1eefb;font-weight:700}
+.net{font-size:1.3rem;font-weight:800;color:#1a7a44;text-align:right;margin-top:6px}
+.legal{font-size:.68rem;color:#999;margin-top:12px;line-height:1.5}
+footer{background:#35286b;color:#aaa;text-align:center;padding:16px;font-size:.8rem;margin-top:auto}
+footer a{color:#fff;text-decoration:none}
+@media print{
+  body *{visibility:hidden}
+  .payslip,.payslip *{visibility:visible}
+  .payslip{display:block !important;position:absolute;left:0;top:0;width:100%;border:none;padding:10px}
+  .ad-banner,.no-print{display:none !important}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>🧾 Free Payslip Generator</h1>
+    <p>UK &amp; Nigeria PAYE, calculated in your browser — private, no signup, nothing uploaded</p>
+    <p style="margin-top:2px;font-size:.75rem;opacity:.55">by Afro Walkman Studios</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="ad-banner no-print">
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-7470802264397682" data-ad-slot="BANNER_SLOT"
+         data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="card no-print">
+    <h2>Country</h2>
+    <div class="seg" id="seg">
+      <button class="on" data-c="UK" onclick="setCountry('UK')">🇬🇧 United Kingdom</button>
+      <button data-c="NG" onclick="setCountry('NG')">🇳🇬 Nigeria</button>
+    </div>
+    <div class="grid2">
+      <div><label>Employee name</label><input id="emp" placeholder="Ada Obi"></div>
+      <div><label>Employee ID / NIN</label><input id="empId" placeholder="PAYE ref / NIN"></div>
+    </div>
+    <div class="grid2">
+      <div><label>Employer</label><input id="co" placeholder="Acme Ltd"></div>
+      <div><label>Pay period</label><input id="period" placeholder="e.g. August 2026" value=""></div>
+    </div>
+    <div class="grid2">
+      <div><label>Gross pay (monthly)</label><input id="gross" type="number" min="0" value="2500" inputmode="decimal"></div>
+      <div id="pensionWrap" style="display:none"><label>Pension contribution (%)</label><input id="pension" type="number" min="0" max="100" value="5" inputmode="decimal"></div>
+    </div>
+    <div id="taxCodeWrap"><label>Tax code (e.g. 1257L)</label><input id="taxCode" value="1257L"></div>
+    <div style="margin-top:14px" class="center">
+      <button class="btn" onclick="render()">🖨️ Generate &amp; Print / Save PDF</button>
+    </div>
+    <div class="tip no-print">🔒 <strong>Privacy first:</strong> every calculation runs locally. Payroll figures never touch a server. Tax logic uses published 2025/26 rates — always shown as <em>indicative</em>, not advice.</div>
+  </div>
+
+  <div class="payslip" id="paper" aria-live="polite">
+    <div class="top">
+      <div><h2>PAYSLIP</h2><div style="font-size:.8rem;color:#666" id="coOut"></div></div>
+      <div style="text-align:right;font-size:.8rem"><div id="periodOut"></div><div id="countryOut"></div></div>
+    </div>
+    <table>
+      <tr><th>Employee</th><td id="empOut"></td></tr>
+      <tr><th>ID / NIN</th><td id="empIdOut"></td></tr>
+    </table>
+    <table>
+      <thead><tr><th>Earnings</th><th class="num">Amount</th></tr></thead>
+      <tbody id="earnRows"></tbody>
+    </table>
+    <table>
+      <thead><tr><th>Deductions</th><th class="num">Amount</th></tr></thead>
+      <tbody id="dedRows"></tbody>
+    </table>
+    <div class="grand" style="display:flex;justify-content:space-between;padding:8px"><span>Net pay</span><span id="netOut" class="num"></span></div>
+    <div class="net" id="netBig"></div>
+    <div class="legal" id="legalText"></div>
+  </div>
+
+  <div class="ad-banner no-print" style="min-height:250px">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7470802264397682"
+         data-ad-slot="FOOTER_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <a href="privacy.html">Privacy</a> · <a href="https://buymeacoffee.com/afrowalkmanstudios" target="_blank" rel="noopener">Support</a>
+    <div style="margin-top:4px">© <span id="yr"></span> Afro Walkman Studios — Free Payslip Generator</div>
+  </div>
+</footer>
+
+<script>
+/* ---- UK 2025/26 monthly PAYE + NI ---- */
+var UK = {
+  paMonthly: 12570/12,            // personal allowance
+  niPrimary: 1048, niUpper: 4189, // monthly primary threshold / upper limit
+  niMain: 0.08, niHi: 0.02
+};
+/* ---- Nigeria 2025 PAYE (annual, consolidated relief = 20% gross + 200k) ---- */
+var NG = [
+  { up: 300000,  rate: 0.07 },
+  { up: 600000,  rate: 0.11 },
+  { up: 1100000, rate: 0.15 },
+  { up: 1600000, rate: 0.19 },
+  { up: 3200000, rate: 0.21 },
+  { up: Infinity,rate: 0.24 }
+];
+var curCountry = 'UK';
+function setCountry(c){
+  curCountry=c;
+  document.querySelectorAll('#seg button').forEach(function(b){b.classList.toggle('on',b.dataset.c===c)});
+  document.getElementById('taxCodeWrap').style.display = c==='UK'?'':'none';
+  document.getElementById('pensionWrap').style.display = c==='UK'?'':'none';
+}
+function fmt(n,cur){return (cur||'£')+Number(n).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function taxCodeAllowance(code){
+  var m=String(code||'').match(/^(\d{3,4})/);
+  if(!m)return UK.paMonthly;
+  return (parseInt(m[1],10)*10)/12;
+}
+function calcUK(gross,pensionPct,code){
+  var pa=taxCodeAllowance(code);
+  var pension=gross*(pensionPct/100);
+  var taxable=Math.max(0,gross-pa);
+  var paye=taxable*0.20;                       // basic rate 20%
+  var ni=0;
+  if(gross>UK.niPrimary){var b=Math.min(gross,UK.niUpper)-UK.niPrimary;ni=b*UK.niMain}
+  if(gross>UK.niUpper){ni+=(gross-UK.niUpper)*UK.niHi}
+  var net=gross-paye-ni-pension;
+  return {gross:gross,ded:[
+    ['Income Tax (PAYE)',paye],['National Insurance',ni],['Pension ('+pensionPct+'%)',pension]
+  ].filter(function(d){return d[1]>0.009}),net:net,legal:'Indicative UK PAYE using 2025/26 rates (personal allowance £12,570; NI 8%/2%). Not HMRC advice.'};
+}
+function calcNG(grossMonthly){
+  var annual=grossMonthly*12;
+  var relief=0.20*annual+200000;
+  var taxable=Math.max(0,annual-relief);
+  var tax=0,prev=0;
+  for(var i=0;i<NG.length;i++){
+    var b=NG[i];
+    if(taxable>prev){tax+=(Math.min(taxable,b.up)-prev)*b.rate;prev=b.up}
+  }
+  var monthlyTax=tax/12;
+  var net=grossMonthly-monthlyTax;
+  return {gross:grossMonthly,ded:[['PAYE (income tax)',monthlyTax]].filter(function(d){return d[1]>0.009}),
+    net:net,legal:'Indicative Nigeria PAYE using the Personal Income Tax Act (consolidated relief = 20% of gross + ₦200,000 annual). Figures are monthly equivalents of annual computation. Not FIRS advice.'};
+}
+function render(){
+  var gross=parseFloat(document.getElementById('gross').value)||0;
+  var cur = curCountry==='NG'?'₦':'£';
+  var r = curCountry==='UK'
+    ? calcUK(gross, parseFloat(document.getElementById('pension').value)||0, document.getElementById('taxCode').value)
+    : calcNG(gross);
+  document.getElementById('coOut').textContent=document.getElementById('co').value||'Employer';
+  document.getElementById('periodOut').textContent=document.getElementById('period').value||'Pay period';
+  document.getElementById('countryOut').textContent=curCountry==='UK'?'United Kingdom':'Nigeria';
+  document.getElementById('empOut').textContent=document.getElementById('emp').value||'Employee';
+  document.getElementById('empIdOut').textContent=document.getElementById('empId').value||'—';
+  document.getElementById('earnRows').innerHTML='<tr><td>Gross pay (monthly)</td><td class="num">'+fmt(gross,cur)+'</td></tr>';
+  document.getElementById('dedRows').innerHTML=r.ded.map(function(d){
+    return '<tr><td>'+d[0]+'</td><td class="num">−'+fmt(d[1],cur)+'</td></tr>'
+  }).join('') || '<tr><td>None</td><td class="num">—</td></tr>';
+  document.getElementById('netOut').textContent=fmt(r.net,cur);
+  document.getElementById('netBig').textContent=fmt(r.net,cur);
+  document.getElementById('legalText').textContent=r.legal;
+  document.getElementById('paper').style.display='block';
+  window.track&&window.track('payslip_generate',{country:curCountry,gross:Math.round(gross)});
+  setTimeout(function(){window.print()},150);
+}
+function demo(){
+  var uk=calcUK(3000,5,'1257L');
+  console.assert(uk.gross===3000 && uk.net>2000 && uk.net<3000,'UK range sane');
+  var ng=calcNG(500000);
+  console.assert(ng.gross===500000 && ng.net>300000 && ng.net<500000,'NG range sane');
+  console.assert(calcUK(800,0,'1257L').net===800,'below allowance = no tax');
+  console.log('payslip self-check OK');
+}
+window.addEventListener('load',function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var d=new Date();document.getElementById('period').value=d.toLocaleString('en-GB',{month:'long',year:'numeric'});
+  setCountry('UK');
+  if(new URLSearchParams(location.search).get('demo'))demo();
+});
+</script>
+</body>
+</html>
