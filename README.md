@@ -14,6 +14,6 @@ portfolio repo [`/workspace/onepage-sites`](../onepage-sites) (validation report
 Open `index.html?demo=true` in a browser — runs the built-in assertions.
 
 ## Deploy (GitHub Pages)
-Push this folder's contents to the repo root, enable Pages. Replace the
-placeholder AdSense `data-ad-slot` IDs (`BANNER_SLOT`, `FOOTER_SLOT`) with real
-ones, and fix the canonical/sitemap slug if the repo name differs.
+Push this folder's contents to the repo root, enable Pages. Ads run via
+AdSense **Auto ads** (loader tag in `<head>`, no manual `data-ad-slot` units).
+Fix the canonical/sitemap slug if the repo name differs.
