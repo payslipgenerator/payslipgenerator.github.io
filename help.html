@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payslip Generator Help — UK &amp; Nigeria PAYE explained</title>
+<meta name="description" content="Step-by-step help for the free Payslip Generator: how UK PAYE tax and National Insurance are calculated, how Nigeria PAYE works, how to print or save as PDF, and troubleshooting common issues.">
+<link rel="canonical" href="https://payslipgenerator.github.io/help.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{font-family:Inter,sans-serif;background:#f6f8fa;color:#1a1a2e;margin:0;line-height:1.7}
+.container{max-width:720px;margin:0 auto;padding:30px 20px}
+h1{font-size:1.5rem;color:#35286b}
+h2{font-size:1.15rem;margin-top:28px;padding-top:14px;border-top:1px solid #e4e8f5;color:#35286b}
+a{color:#4a6cf7}
+footer{background:#1a1a2e;color:#aaa;text-align:center;padding:20px;font-size:.8rem;margin-top:20px}
+footer a{color:#4a6cf7}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.nav a{background:#eef1ff;color:#4a6cf7;border-radius:14px;padding:5px 12px;font-size:.85rem;text-decoration:none;font-weight:600}
+.tip{background:#f0f7ff;border-left:4px solid #4a6cf7;padding:10px 14px;border-radius:0 8px 8px 0;font-size:.9rem;margin:14px 0}
+code{background:#eef1ff;border-radius:4px;padding:1px 5px;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🪪 Payslip Generator — help &amp; how tax is calculated</h1>
+<p>Everything computed stays in your browser — nothing is uploaded. Find out how each number is worked out, then adjust your inputs until the payslip looks right.</p>
+
+<div class="nav">
+<a href="#uk">UK PAYE</a>
+<a href="#ni">National Insurance</a>
+<a href="#ng">Nigeria PAYE</a>
+<a href="#print">Print / save as PDF</a>
+<a href="#trouble">Troubleshooting</a>
+</div>
+
+<h2 id="uk">How UK tax (PAYE) is calculated</h2>
+<ol>
+<li>Enter the employee's <strong>gross monthly pay</strong> — before any tax or National Insurance.</li>
+<li>Enter their <strong>tax code</strong> (e.g. <code>1257L</code> for the standard 2025/26 allowance). The last digit is ignored and the letters map to a code: L = basic allowance, M/N = marriage allowance adjustments, T = HMRC reviewed code.</li>
+<li>The tool annualises the allowance from the tax code, applies it monthly, and taxes the remainder at the basic rate (20%).</li>
+<li>If the salary pushes into the higher band, the amount above the higher-rate threshold is taxed at 40% (and above the additional threshold at 45%).</li>
+</ol>
+<p class="tip">Example: gross £3,000/month, code <code>1257L</code> → allowance £12,570/year = £1,047.50/month. Taxable £1,952.50 × 20% = <strong>£390.50</strong> income tax for the month.</p>
+
+<h2 id="ni">National Insurance</h2>
+<ol>
+<li>Employee National Insurance is calculated on earnings above the Primary Threshold (PT).</li>
+<li>Main rate: 8% on earnings above the PT up to the Upper Earnings Limit, then 2% above that.</li>
+<li>Optional: tick <strong>pension</strong> to deduct a salary-sacrifice style pension percentage before tax is applied.</li>
+</ol>
+
+<h2 id="ng">How Nigeria PAYE is calculated</h2>
+<ol>
+<li>Enter the employee's <strong>gross monthly pay</strong> in Naira and switch the country to Nigeria.</li>
+<li>The tool applies the Personal Income Tax Act reliefs: Consolidated Relief Allowance = 20% of gross + ₦200,000, annualised.</li>
+<li>The remainder is taxed on the progressive 7%–24% bands for the tax year, applied monthly.</li>
+</ol>
+
+<h2 id="print">Print or save as PDF</h2>
+<ol>
+<li>Fill in the fields and click <strong>Generate payslip</strong>.</li>
+<li>The payslip preview appears below the form.</li>
+<li>Click <strong>Print</strong> (or press Ctrl/Cmd+P).</li>
+<li>In the print dialog choose <strong>Save as PDF</strong> as the destination — the payslip is saved as a clean PDF, ready to send.</li>
+</ol>
+
+<h2 id="trouble">Troubleshooting</h2>
+<ul>
+<li><strong>Tax looks too high/low</strong> — check the tax code and the period. A code like <code>1257L</code> means a full year allowance; if the employee started mid-year the code is usually different (e.g. <code>1257L M1</code> or a K code).</li>
+<li><strong>Net pay is the same as gross</strong> — the person is below the tax and NI thresholds, which is correct for low earners.</li>
+<li><strong>Payslip prints on two pages</strong> — reduce the browser zoom before printing, or clear the notes area.</li>
+<li><strong>Wrong currency symbols</strong> — the currency follows the selected country; switch back if the format looks off.</li>
+</ul>
+
+<p><a href="index.html">← Back to the generator</a></p>
+</div>
+<footer><p><a href="about.html">About</a> · <a href="help.html">Help</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="help.html">Help</a> · <a href="contact.html">Contact</a></p></footer>
+<script src="track.js" data-ga="G-NMDXLM3Z2J"></script>
+</body>
+</html>
